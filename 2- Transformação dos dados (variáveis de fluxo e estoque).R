@@ -18,10 +18,10 @@ for(i in 1:nrow(ativo_total2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(ativo_total2$`Setor ICB` == cond[1] |
               ativo_total2$`Setor ICB` == cond[2] |
               ativo_total2$`Setor ICB` == cond[3] |
@@ -30,7 +30,7 @@ pos = which(ativo_total2$`Setor ICB` == cond[1] |
               ativo_total2$`Setor ICB` == cond[6] |
               ativo_total2$`Setor ICB` == cond[7] |
               ativo_total2$`Setor ICB` == cond[8] |
-              ativo_total2$`Setor ICB` == cond[9])
+              ativo_total2$`Nome` == cond[9])
 
 ativo_total2 = ativo_total2[-pos,]
 
@@ -55,10 +55,10 @@ for(i in 1:nrow(EBITDA2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(EBITDA2$`Setor ICB` == cond[1] |
               EBITDA2$`Setor ICB` == cond[2] |
               EBITDA2$`Setor ICB` == cond[3] |
@@ -67,7 +67,7 @@ pos = which(EBITDA2$`Setor ICB` == cond[1] |
               EBITDA2$`Setor ICB` == cond[6] |
               EBITDA2$`Setor ICB` == cond[7] |
               EBITDA2$`Setor ICB` == cond[8] |
-              EBITDA2$`Setor ICB` == cond[9])
+              EBITDA2$`Nome` == cond[9])
 
 EBITDA2 = EBITDA2[-pos,]
 
@@ -92,10 +92,10 @@ for(i in 1:nrow(entr_cx_oper2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(entr_cx_oper2$`Setor ICB` == cond[1] |
               entr_cx_oper2$`Setor ICB` == cond[2] |
               entr_cx_oper2$`Setor ICB` == cond[3] |
@@ -104,7 +104,7 @@ pos = which(entr_cx_oper2$`Setor ICB` == cond[1] |
               entr_cx_oper2$`Setor ICB` == cond[6] |
               entr_cx_oper2$`Setor ICB` == cond[7] |
               entr_cx_oper2$`Setor ICB` == cond[8] |
-              entr_cx_oper2$`Setor ICB` == cond[9])
+              entr_cx_oper2$`Nome` == cond[9])
 
 entr_cx_oper2 = entr_cx_oper2[-pos,]
 
@@ -129,10 +129,10 @@ for(i in 1:nrow(lucros_retidos2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(lucros_retidos2$`Setor ICB` == cond[1] |
               lucros_retidos2$`Setor ICB` == cond[2] |
               lucros_retidos2$`Setor ICB` == cond[3] |
@@ -141,7 +141,7 @@ pos = which(lucros_retidos2$`Setor ICB` == cond[1] |
               lucros_retidos2$`Setor ICB` == cond[6] |
               lucros_retidos2$`Setor ICB` == cond[7] |
               lucros_retidos2$`Setor ICB` == cond[8] |
-              lucros_retidos2$`Setor ICB` == cond[9])
+              lucros_retidos2$`Nome` == cond[9])
 
 lucros_retidos2 = lucros_retidos2[-pos,]
 
@@ -166,10 +166,10 @@ for(i in 1:nrow(lucros_por_acao2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(lucros_por_acao2$`Setor ICB` == cond[1] |
               lucros_por_acao2$`Setor ICB` == cond[2] |
               lucros_por_acao2$`Setor ICB` == cond[3] |
@@ -178,7 +178,7 @@ pos = which(lucros_por_acao2$`Setor ICB` == cond[1] |
               lucros_por_acao2$`Setor ICB` == cond[6] |
               lucros_por_acao2$`Setor ICB` == cond[7] |
               lucros_por_acao2$`Setor ICB` == cond[8] |
-              lucros_por_acao2$`Setor ICB` == cond[9])
+              lucros_por_acao2$`Nome` == cond[9])
 
 lucros_por_acao2 = lucros_por_acao2[-pos,]
 
@@ -203,10 +203,10 @@ for(i in 1:nrow(div_cp2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(div_cp2$`Setor ICB` == cond[1] |
               div_cp2$`Setor ICB` == cond[2] |
               div_cp2$`Setor ICB` == cond[3] |
@@ -215,7 +215,7 @@ pos = which(div_cp2$`Setor ICB` == cond[1] |
               div_cp2$`Setor ICB` == cond[6] |
               div_cp2$`Setor ICB` == cond[7] |
               div_cp2$`Setor ICB` == cond[8] |
-              div_cp2$`Setor ICB` == cond[9])
+              div_cp2$`Nome` == cond[9])
 
 div_cp2 = div_cp2[-pos,]
 
@@ -240,10 +240,10 @@ for(i in 1:nrow(div_lp2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(div_lp2$`Setor ICB` == cond[1] |
               div_lp2$`Setor ICB` == cond[2] |
               div_lp2$`Setor ICB` == cond[3] |
@@ -252,7 +252,7 @@ pos = which(div_lp2$`Setor ICB` == cond[1] |
               div_lp2$`Setor ICB` == cond[6] |
               div_lp2$`Setor ICB` == cond[7] |
               div_lp2$`Setor ICB` == cond[8] |
-              div_lp2$`Setor ICB` == cond[9])
+              div_lp2$`Nome` == cond[9])
 
 div_lp2 = div_lp2[-pos,]
 
@@ -277,10 +277,10 @@ for(i in 1:nrow(despesa_juros2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(despesa_juros2$`Setor ICB` == cond[1] |
               despesa_juros2$`Setor ICB` == cond[2] |
               despesa_juros2$`Setor ICB` == cond[3] |
@@ -289,7 +289,7 @@ pos = which(despesa_juros2$`Setor ICB` == cond[1] |
               despesa_juros2$`Setor ICB` == cond[6] |
               despesa_juros2$`Setor ICB` == cond[7] |
               despesa_juros2$`Setor ICB` == cond[8] |
-              despesa_juros2$`Setor ICB` == cond[9])
+              despesa_juros2$`Nome` == cond[9])
 
 despesa_juros2 = despesa_juros2[-pos,]
 
@@ -314,10 +314,10 @@ for(i in 1:nrow(patrimonio_total2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(patrimonio_total2$`Setor ICB` == cond[1] |
               patrimonio_total2$`Setor ICB` == cond[2] |
               patrimonio_total2$`Setor ICB` == cond[3] |
@@ -326,7 +326,7 @@ pos = which(patrimonio_total2$`Setor ICB` == cond[1] |
               patrimonio_total2$`Setor ICB` == cond[6] |
               patrimonio_total2$`Setor ICB` == cond[7] |
               patrimonio_total2$`Setor ICB` == cond[8] |
-              patrimonio_total2$`Setor ICB` == cond[9])
+              patrimonio_total2$`Nome` == cond[9])
 
 patrimonio_total2 = patrimonio_total2[-pos,]
 
@@ -351,10 +351,10 @@ for(i in 1:nrow(lucro_liquido2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(lucro_liquido2$`Setor ICB` == cond[1] |
               lucro_liquido2$`Setor ICB` == cond[2] |
               lucro_liquido2$`Setor ICB` == cond[3] |
@@ -363,7 +363,7 @@ pos = which(lucro_liquido2$`Setor ICB` == cond[1] |
               lucro_liquido2$`Setor ICB` == cond[6] |
               lucro_liquido2$`Setor ICB` == cond[7] |
               lucro_liquido2$`Setor ICB` == cond[8] |
-              lucro_liquido2$`Setor ICB` == cond[9])
+              lucro_liquido2$`Nome` == cond[9])
 
 lucro_liquido2 = lucro_liquido2[-pos,]
 
@@ -388,10 +388,10 @@ for(i in 1:nrow(pl_acao_b2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(pl_acao_b2$`Setor ICB` == cond[1] |
               pl_acao_b2$`Setor ICB` == cond[2] |
               pl_acao_b2$`Setor ICB` == cond[3] |
@@ -400,7 +400,7 @@ pos = which(pl_acao_b2$`Setor ICB` == cond[1] |
               pl_acao_b2$`Setor ICB` == cond[6] |
               pl_acao_b2$`Setor ICB` == cond[7] |
               pl_acao_b2$`Setor ICB` == cond[8] |
-              pl_acao_b2$`Setor ICB` == cond[9])
+              pl_acao_b2$`Nome` == cond[9])
 
 pl_acao_b2 = pl_acao_b2[-pos,]
 
@@ -425,10 +425,10 @@ for(i in 1:nrow(pl_acao_d2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(pl_acao_d2$`Setor ICB` == cond[1] |
               pl_acao_d2$`Setor ICB` == cond[2] |
               pl_acao_d2$`Setor ICB` == cond[3] |
@@ -437,7 +437,7 @@ pos = which(pl_acao_d2$`Setor ICB` == cond[1] |
               pl_acao_d2$`Setor ICB` == cond[6] |
               pl_acao_d2$`Setor ICB` == cond[7] |
               pl_acao_d2$`Setor ICB` == cond[8] |
-              pl_acao_d2$`Setor ICB` == cond[9])
+              pl_acao_d2$`Nome` == cond[9])
 
 pl_acao_d2 = pl_acao_d2[-pos,]
 
@@ -462,10 +462,10 @@ for(i in 1:nrow(patr_liq2)){
   rm(v)
 }
 
-# Retirando do banco as empresas que fazem parte de setores "indesejados"
+# Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV e o índice IBOV
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
-         "Real State Investment Trusts", "General Retailers")
+         "Real State Investment Trusts", "IBOV")
 pos = which(patr_liq2$`Setor ICB` == cond[1] |
               patr_liq2$`Setor ICB` == cond[2] |
               patr_liq2$`Setor ICB` == cond[3] |
@@ -474,7 +474,7 @@ pos = which(patr_liq2$`Setor ICB` == cond[1] |
               patr_liq2$`Setor ICB` == cond[6] |
               patr_liq2$`Setor ICB` == cond[7] |
               patr_liq2$`Setor ICB` == cond[8] |
-              patr_liq2$`Setor ICB` == cond[9])
+              patr_liq2$`Nome` == cond[9])
 
 patr_liq2 = patr_liq2[-pos,]
 

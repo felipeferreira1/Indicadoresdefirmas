@@ -286,4 +286,4 @@ write.xlsx(lucros_patr, "Indicadores de Empresas Brasileiras.xlsx", sheetName = 
 write.xlsx(v2.lucros_patr, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Lucros Retidos - Patr. Líq.", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(DE, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Debt - Equity Ratio", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(PE_basico, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Price - Earnings Ratio (v1)", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(PE_diluido, "Indicadores de Empresas Brasileiras (2ª parte).xlsx", sheetName = "Price - Earnings Ratio (v2)", row.names = FALSE, showNA = FALSE)
+write.xlsx(PE_diluido, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Price - Earnings Ratio (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
