@@ -16,9 +16,8 @@ library(lubridate)
 library(smooth)
 library(forecast)
 
-
 # definir diretorio de trabalho
-setwd("D:/Users/e270780232/Desktop/Projeto Bloomberg - R")
+setwd("//SRJN3/area_corporativa/Projeto GAP-DIMAC/Automatizações/Projeto Bloomberg - R")
 
 ### Leitura e formatação dos dados ###
 
@@ -26,7 +25,7 @@ setwd("D:/Users/e270780232/Desktop/Projeto Bloomberg - R")
 # Como este é um processo que faz a mesma tarefa para todas as planilhas, optou-se por utilizar uma estrutura de
 # repetição (for).
 
-for(k in 1:13){
+for(k in 1:17){
   base = read_excel("Indicadores Bloomberg.xlsx", sheet = k, skip = 4)
   base = as.data.frame(base)
   
@@ -117,6 +116,10 @@ for(k in 1:13){
   if(k == 11){pl_acao_b = dados2}
   if(k == 12){pl_acao_d = dados2}
   if(k == 13){patr_liq = dados2}
+  if(k == 14){div_est = dados2}
+  if(k == 15){div_est_tot = dados2}
+  if(k == 16){deb = dados2}
+  if(k == 17){div_tot = dados2}
   
   rm(dados2)
   print(k)
