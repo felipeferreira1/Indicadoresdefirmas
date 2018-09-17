@@ -11,6 +11,7 @@ v3.ind.rentabilidade_MM = v3.ind.rentabilidade2
 v4.ind.rentabilidade_MM = v4.ind.rentabilidade2
 ind.PE_basico_MM = ind.PE_basico2
 ind.PE_diluido_MM = ind.PE_diluido2
+ind.div_est_MM = ind.div_est2
 
 r = 4
 
@@ -157,6 +158,17 @@ ind.PE_diluido_MM[1,-1] = sma(ts(as.vector(x, mode = "numeric"), start = c(ano_i
 ind.PE_diluido_MM[2,-1] = sma(ts(as.vector(y, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
 ind.PE_diluido_MM[3,-1] = sma(ts(as.vector(z, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
 
+ano_i = as.numeric(substring(names(ind.div_est_MM)[2],1,4))
+ano_f = as.numeric(substring(names(ind.div_est_MM)[length(names(ind.div_est_MM))],1,4))
+q_i = as.numeric(substring(names(ind.div_est_MM)[2],7))
+q_f = as.numeric(substring(names(ind.div_est_MM)[length(names(ind.div_est_MM))],7))
+x = ind.div_est_MM[1,-1]
+y = ind.div_est_MM[2,-1]
+z = ind.div_est_MM[3,-1]
+ind.div_est_MM[1,-1] = sma(ts(as.vector(x, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
+ind.div_est_MM[2,-1] = sma(ts(as.vector(y, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
+ind.div_est_MM[3,-1] = sma(ts(as.vector(z, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
+
 
 write.xlsx(ind.rentabilidade_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Rentabilidade", row.names = FALSE, showNA = FALSE, append = FALSE)
 write.xlsx(v2.ind.rentabilidade_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Rentabilidade (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
@@ -171,3 +183,4 @@ write.xlsx(v2.ind.lucros_patr_MM, "Medidas de Posição (Outliers excluídos - Médi
 write.xlsx(ind.DE_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Debt - Equity Ratio", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(ind.PE_basico_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Price - Earnings Ratio (v1)", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(ind.PE_diluido_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Price - Earnings Ratio (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(ind.div_est_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Div. em moeda estrangeira", row.names = FALSE, showNA = FALSE, append = TRUE)

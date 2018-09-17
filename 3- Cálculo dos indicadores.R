@@ -269,10 +269,28 @@ for(i in 1:nrow(entr_cx_oper2)){
   }
 }
 
+########## Dívida em moeda estrangeira/Dívida total ##########
+div_est_tot3 = div_est_tot2
+div_est_tot4 = colSums(div_est_tot3[,(-1:-3)])
+
+div_tot3 = div_tot2
+div_tot4 = colSums(div_tot3[,(-1:-3)])
+
+est_tot = div_est_tot4/div_tot4
+
+########## Debentures/Dívida total ##########
+deb3 = deb2
+deb4 = colSums(deb3[,(-1:-3)])
+
+div_tot3 = div_tot2
+div_tot4 = colSums(div_tot3[,(-1:-27)])
+
+deb_tot = deb4/div_tot4
+
 rm(ativo_total, ativo_total2, despesa_juros, despesa_juros2, div_cp, div_cp2, div_lp, div_lp2,
    EBITDA, EBITDA2, entr_cx_oper, entr_cx_oper2, lucros_por_acao2, lucros_retidos, lucros_retidos2,
    patrimonio_total, patrimonio_total2, lucro_liquido, lucro_liquido2, patr_liq, patr_liq2,
-   pl_acao_b2, pl_acao_b, pl_acao_d2, pl_acao_d, i, j, nomes)
+   pl_acao_b2, pl_acao_b, pl_acao_d2, pl_acao_d, i, j, nomes, deb2, deb3, div_est_tot2, div_est_tot3, div_tot2, div_tot3)
 
 write.xlsx(rentabilidade, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Rentabilidade", row.names = FALSE, showNA = FALSE, append = FALSE)
 write.xlsx(v2.rentabilidade, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Rentabilidade (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
@@ -287,3 +305,6 @@ write.xlsx(v2.lucros_patr, "Indicadores de Empresas Brasileiras.xlsx", sheetName
 write.xlsx(DE, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Debt - Equity Ratio", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(PE_basico, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Price - Earnings Ratio (v1)", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(PE_diluido, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Price - Earnings Ratio (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(div_est, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "% da Div. em moeda estrangeira", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(est_tot, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Div. em moeda estrangeira - Dívida total", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(deb_tot, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Debentures - Dívida total", row.names = FALSE, showNA = FALSE, append = TRUE)

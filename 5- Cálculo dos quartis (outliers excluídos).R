@@ -11,6 +11,7 @@ v3.ind.rentabilidade2 = v3.rentabilidade[1:3,-c(1:3)]
 v4.ind.rentabilidade2 = v4.rentabilidade[1:3,-c(1:3)]
 ind.PE_basico2 = PE_basico[1:3,-c(1:3)]
 ind.PE_diluido2 = PE_diluido[1:3,-c(1:3)]
+ind.div_est2 = div_est[1:3,-c(1:3)]
 
 vetor = c("Q1", "Mediana", "Q3")
 
@@ -209,6 +210,21 @@ ind.PE_diluido2 = data.frame(Medida = vetor, ind.PE_diluido2)
 names(ind.PE_diluido2) = gsub("[.]", " ", names(ind.PE_diluido2))
 names(ind.PE_diluido2) = gsub("X", "", names(ind.PE_diluido2))
 
+for(i in 1:ncol(ind.div_est2)){
+  x = PE_diluido[,(i+3)]
+  if(length(which(abs(x) == Inf)) != 0){x = x[-which(abs(x) == Inf)]}
+  ai = quantile(x, probs = 0.75, na.rm = TRUE, names = FALSE) - quantile(x, probs = 0.25, na.rm = TRUE, names = FALSE)
+  li = quantile(x, probs = 0.25, na.rm = TRUE, names = FALSE) - (1.5*ai)
+  ls = quantile(x, probs = 0.75, na.rm = TRUE, names = FALSE) + (1.5*ai)
+  x = x[which(x >= li & x <= ls)]
+  ind.div_est2[1,i] = quantile(x, probs = 0.25, na.rm = TRUE, names = FALSE)
+  ind.div_est2[2,i] = quantile(x, probs = 0.5, na.rm = TRUE, names = FALSE)
+  ind.div_est2[3,i] = quantile(x, probs = 0.75, na.rm = TRUE, names = FALSE)
+}
+ind.div_est2 = data.frame(Medida = vetor, ind.div_est2)
+names(ind.div_est2) = gsub("[.]", " ", names(ind.div_est2))
+names(ind.div_est2) = gsub("X", "", names(ind.div_est2))
+
 
 write.xlsx(ind.rentabilidade2, "Medidas de Posição (Outliers excluídos).xlsx", sheetName = "Rentabilidade", row.names = FALSE, showNA = FALSE, append = FALSE)
 write.xlsx(v2.ind.rentabilidade2, "Medidas de Posição (Outliers excluídos).xlsx", sheetName = "Rentabilidade (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
@@ -223,3 +239,4 @@ write.xlsx(v2.ind.lucros_patr2, "Medidas de Posição (Outliers excluídos).xlsx", 
 write.xlsx(ind.DE2, "Medidas de Posição (Outliers excluídos).xlsx", sheetName = "Debt - Equity Ratio", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(ind.PE_basico2, "Medidas de Posição (Outliers excluídos).xlsx", sheetName = "Price - Earnings Ratio (v1)", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(ind.PE_diluido2, "Medidas de Posição (Outliers excluídos).xlsx", sheetName = "Price - Earnings Ratio (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(ind.div_est2, "Medidas de Posição (Outliers excluídos).xlsx", sheetName = "Div. em moeda estrangeira", row.names = FALSE, showNA = FALSE, append = TRUE)
