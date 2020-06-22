@@ -270,27 +270,66 @@ for(i in 1:nrow(entr_cx_oper2)){
 }
 
 ########## Dívida em moeda estrangeira/Dívida total ##########
-div_est_tot3 = div_est_tot2
-div_est_tot4 = colSums(div_est_tot3[,(-1:-3)])
+nomes = intersect(names(div_est_tot2), names(div_tot2))
+entr_cx_oper = entr_cx_oper2[,nomes]
+div_est_tot = div_est_tot2[,nomes]
+div_tot = div_tot2[,nomes]
 
-div_tot3 = div_tot2
-div_tot4 = colSums(div_tot3[,(-1:-3)])
-
-est_tot = div_est_tot4/div_tot4
+EST = div_tot
+for(i in 1:nrow(entr_cx_oper2)){
+  for(j in 4:length(nomes)){
+    if(is.na(entr_cx_oper[i,j]) == FALSE){
+      EST[i,j] = div_est_tot[i,j]/div_tot[i,j]
+    }
+    else{EST[i,j] = NA}
+    if(is.na(EST[i,j]) == FALSE){
+      if(EST[i,j] == 0){EST[i,j] = NA}
+    }
+  }
+}
 
 ########## Debentures/Dívida total ##########
-deb3 = deb2
-deb4 = colSums(deb3[,(-1:-3)])
+nomes = intersect(names(deb2), names(div_tot2))
+entr_cx_oper = entr_cx_oper2[,nomes]
+deb = deb2[,nomes]
+div_tot = div_tot2[,nomes]
 
-div_tot3 = div_tot2
-div_tot4 = colSums(div_tot3[,(-1:-27)])
+DEB = div_tot
+for(i in 1:nrow(entr_cx_oper2)){
+  for(j in 4:length(nomes)){
+    if(is.na(entr_cx_oper[i,j]) == FALSE){
+      DEB[i,j] = deb[i,j]/div_tot[i,j]
+    }
+    else{DEB[i,j] = NA}
+    if(is.na(DEB[i,j]) == FALSE){
+      if(DEB[i,j] == 0){DEB[i,j] = NA}
+    }
+  }
+}
 
-deb_tot = deb4/div_tot4
+#Cálculo considerando a soma dos dados para todas as empresas
+########## Dívida em moeda estrangeira/Dívida total ##########
+#div_est_tot3 = div_est_tot2
+#div_est_tot4 = colSums(div_est_tot3[,(-1:-3)])
 
-rm(ativo_total, ativo_total2, despesa_juros, despesa_juros2, div_cp, div_cp2, div_lp, div_lp2,
-   EBITDA, EBITDA2, entr_cx_oper, entr_cx_oper2, lucros_por_acao2, lucros_retidos, lucros_retidos2,
-   patrimonio_total, patrimonio_total2, lucro_liquido, lucro_liquido2, patr_liq, patr_liq2,
-   pl_acao_b2, pl_acao_b, pl_acao_d2, pl_acao_d, i, j, nomes, deb2, deb3, div_est_tot2, div_est_tot3, div_tot2, div_tot3)
+#div_tot3 = div_tot2
+#div_tot4 = colSums(div_tot3[,(-1:-3)])
+
+#est_tot = div_est_tot4/div_tot4
+
+########## Debentures/Dívida total ##########
+#deb3 = deb2
+#deb4 = colSums(deb3[,(-1:-3)])
+
+#div_tot3 = div_tot2
+#div_tot4 = colSums(div_tot3[,(-1:-27)])
+
+#deb_tot = deb4/div_tot4
+
+#rm(ativo_total, ativo_total2, despesa_juros, despesa_juros2, div_cp, div_cp2, div_lp, div_lp2,
+#   EBITDA, EBITDA2, entr_cx_oper, entr_cx_oper2, lucros_por_acao2, lucros_retidos, lucros_retidos2,
+#   patrimonio_total, patrimonio_total2, lucro_liquido, lucro_liquido2, patr_liq, patr_liq2,
+#   pl_acao_b2, pl_acao_b, pl_acao_d2, pl_acao_d, i, j, nomes, div_est_tot, div_est_tot2, div_tot, div_tot2, deb, deb2,)
 
 write.xlsx(rentabilidade, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Rentabilidade", row.names = FALSE, showNA = FALSE, append = FALSE)
 write.xlsx(v2.rentabilidade, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Rentabilidade (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
@@ -300,11 +339,11 @@ write.xlsx(ICJ, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Índ. de
 write.xlsx(div_EBITDA, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Div. Líquida - EBITDA", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(GE, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Grau de Endividamento", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(CE, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Comp. do Endividamento", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(lucros_patr, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Lucros Retidos - Patr. Tot.", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(v2.lucros_patr, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Lucros Retidos - Patr. Líq.", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(DE, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Debt - Equity Ratio", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(PE_basico, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Price - Earnings Ratio (v1)", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(PE_diluido, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "Price - Earnings Ratio (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(div_est, "Indicadores de Empresas Brasileiras.xlsx", sheetName = "% da Div. em moeda estrangeira", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(est_tot, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Div. em moeda estrangeira - Dívida total", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(deb_tot, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Debentures - Dívida total", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(lucros_patr, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Lucros Retidos - Patr. Tot.", row.names = FALSE, showNA = FALSE, append = FALSE)
+write.xlsx(v2.lucros_patr, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Lucros Retidos - Patr. Líq.", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(DE, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Debt - Equity Ratio", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(PE_basico, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Price - Earnings Ratio (v1)", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(PE_diluido, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Price - Earnings Ratio (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(div_est, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "% da Div. em moeda estrangeira", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(EST, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Div. em moeda estrangeira - calculado", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(DEB, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Debentures - Dívida total", row.names = FALSE, showNA = FALSE, append = TRUE)

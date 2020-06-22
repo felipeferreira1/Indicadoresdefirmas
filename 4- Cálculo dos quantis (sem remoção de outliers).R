@@ -12,6 +12,8 @@ v4.ind.rentabilidade = v4.rentabilidade[1:3,-c(1:3)]
 ind.PE_basico = PE_basico[1:3,-c(1:3)]
 ind.PE_diluido = PE_diluido[1:3,-c(1:3)]
 ind.div_est = div_est[1:3,-c(1:3)]
+ind.EST = EST[1:3,-c(1:3)]
+ind.DEB = DEB[1:3,-c(1:3)]
 
 vetor = c("Q1", "Mediana", "Q3")
 
@@ -153,6 +155,24 @@ ind.div_est = data.frame(Medida = vetor, ind.div_est)
 names(ind.div_est) = gsub("[.]", " ", names(ind.div_est))
 names(ind.div_est) = gsub("X", "", names(ind.div_est))
 
+for(i in 1:ncol(ind.EST)){
+  ind.EST[1,i] = quantile(EST[,(i+3)], probs = 0.25, na.rm = TRUE, names = TRUE)
+  ind.EST[2,i] = quantile(EST[,(i+3)], probs = 0.5, na.rm = TRUE, names = TRUE)
+  ind.EST[3,i] = quantile(EST[,(i+3)], probs = 0.75, na.rm = TRUE, names = TRUE)
+}
+ind.EST = data.frame(Medida = vetor, ind.EST)
+names(ind.EST) = gsub("[.]", " ", names(ind.EST))
+names(ind.EST) = gsub("X", "", names(ind.EST))
+
+for(i in 1:ncol(ind.DEB)){
+  ind.DEB[1,i] = quantile(DEB[,(i+3)], probs = 0.25, na.rm = TRUE, names = TRUE)
+  ind.DEB[2,i] = quantile(DEB[,(i+3)], probs = 0.5, na.rm = TRUE, names = TRUE)
+  ind.DEB[3,i] = quantile(DEB[,(i+3)], probs = 0.75, na.rm = TRUE, names = TRUE)
+}
+ind.DEB = data.frame(Medida = vetor, ind.DEB)
+names(ind.DEB) = gsub("[.]", " ", names(ind.DEB))
+names(ind.DEB) = gsub("X", "", names(ind.DEB))
+
 
 write.xlsx(ind.rentabilidade, "Medidas de Posição.xlsx", sheetName = "Rentabilidade", row.names = FALSE, showNA = FALSE, append = FALSE)
 write.xlsx(v2.ind.rentabilidade, "Medidas de Posição.xlsx", sheetName = "Rentabilidade (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
@@ -167,4 +187,6 @@ write.xlsx(v2.ind.lucros_patr, "Medidas de Posição.xlsx", sheetName = "Lucros Re
 write.xlsx(ind.DE, "Medidas de Posição.xlsx", sheetName = "Debt - Equity Ratio", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(ind.PE_basico, "Medidas de Posição.xlsx", sheetName = "Price - Earnings Ratio (v1)", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(ind.PE_diluido, "Medidas de Posição.xlsx", sheetName = "Price - Earnings Ratio (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(ind.div, "Medidas de Posição.xlsx", sheetName = "Div. em moeda estrangeira", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(ind.div_est, "Medidas de Posição.xlsx", sheetName = "Div. em moeda estrangeira", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(ind.EST, "Medidas de Posição.xlsx", sheetName = "Div. em moeda estrangeira - calculado", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(ind.DEB, "Medidas de Posição.xlsx", sheetName = "Debentures - Dívida total", row.names = FALSE, showNA = FALSE, append = TRUE)

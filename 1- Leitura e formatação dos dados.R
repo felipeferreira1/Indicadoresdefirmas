@@ -17,7 +17,7 @@ library(smooth)
 library(forecast)
 
 # definir diretorio de trabalho
-setwd("//SRJN3/area_corporativa/Projeto GAP-DIMAC/Automatizações/Projeto Bloomberg - R")
+setwd("C:/Users/User/Documents/GitHub/indicadoresdefirmas")
 
 ### Leitura e formatação dos dados ###
 
@@ -125,4 +125,4 @@ for(k in 1:17){
   print(k)
 }
 
-rm(k)
+#rm(k)

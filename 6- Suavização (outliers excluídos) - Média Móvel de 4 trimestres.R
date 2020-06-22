@@ -12,6 +12,8 @@ v4.ind.rentabilidade_MM = v4.ind.rentabilidade2
 ind.PE_basico_MM = ind.PE_basico2
 ind.PE_diluido_MM = ind.PE_diluido2
 ind.div_est_MM = ind.div_est2
+ind.EST_MM = ind.EST2
+ind.DEB_MM = ind.DEB2
 
 r = 4
 
@@ -169,6 +171,28 @@ ind.div_est_MM[1,-1] = sma(ts(as.vector(x, mode = "numeric"), start = c(ano_i,q_
 ind.div_est_MM[2,-1] = sma(ts(as.vector(y, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
 ind.div_est_MM[3,-1] = sma(ts(as.vector(z, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
 
+ano_i = as.numeric(substring(names(ind.EST_MM)[2],1,4))
+ano_f = as.numeric(substring(names(ind.EST_MM)[length(names(ind.EST_MM))],1,4))
+q_i = as.numeric(substring(names(ind.EST_MM)[2],7))
+q_f = as.numeric(substring(names(ind.EST_MM)[length(names(ind.EST_MM))],7))
+x = ind.EST_MM[1,-1]
+y = ind.EST_MM[2,-1]
+z = ind.EST_MM[3,-1]
+ind.EST_MM[1,-1] = sma(ts(as.vector(x, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
+ind.EST_MM[2,-1] = sma(ts(as.vector(y, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
+ind.EST_MM[3,-1] = sma(ts(as.vector(z, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
+
+ano_i = as.numeric(substring(names(ind.DEB_MM)[2],1,4))
+ano_f = as.numeric(substring(names(ind.DEB_MM)[length(names(ind.DEB_MM))],1,4))
+q_i = as.numeric(substring(names(ind.DEB_MM)[2],7))
+q_f = as.numeric(substring(names(ind.DEB_MM)[length(names(ind.DEB_MM))],7))
+x = ind.DEB_MM[1,-1]
+y = ind.DEB_MM[2,-1]
+z = ind.DEB_MM[3,-1]
+ind.DEB_MM[1,-1] = sma(ts(as.vector(x, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
+ind.DEB_MM[2,-1] = sma(ts(as.vector(y, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
+ind.DEB_MM[3,-1] = sma(ts(as.vector(z, mode = "numeric"), start = c(ano_i,q_i), end = c(ano_f,q_f), deltat = 1/4), r)$fitted
+
 
 write.xlsx(ind.rentabilidade_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Rentabilidade", row.names = FALSE, showNA = FALSE, append = FALSE)
 write.xlsx(v2.ind.rentabilidade_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Rentabilidade (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
@@ -184,3 +208,5 @@ write.xlsx(ind.DE_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xls
 write.xlsx(ind.PE_basico_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Price - Earnings Ratio (v1)", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(ind.PE_diluido_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Price - Earnings Ratio (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(ind.div_est_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Div. em moeda estrangeira", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(ind.EST_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Div. em moeda estrangeira - calculado", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(ind.DEB_MM, "Medidas de Posição (Outliers excluídos - Média Móvel).xlsx", sheetName = "Debentures - Dívida total", row.names = FALSE, showNA = FALSE, append = TRUE)

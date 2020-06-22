@@ -583,6 +583,6 @@ pos = which(div_tot$`Setor ICB` == cond[1] |
 div_tot = div_tot[-pos,]
 
 
-rm(ativo_total, EBITDA, entr_cx_oper, lucros_retidos, lucros_por_acao, div_cp, div_lp,
-   despesa_juros, patrimonio_total,lucro_liquido, pl_acao_b, pl_acao_d, patr_liq, cond,
-   i, j, pos, deb, div_tot, div_est_tot)
+#rm(ativo_total, EBITDA, entr_cx_oper, lucros_retidos, lucros_por_acao, div_cp, div_lp,
+#   despesa_juros, patrimonio_total,lucro_liquido, pl_acao_b, pl_acao_d, patr_liq, cond,
+#   i, j, pos, deb, div_tot, div_est_tot)
