@@ -466,24 +466,25 @@ for(i in 1:nrow(patr_liq2)){
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
          "Real State Investment Trusts", "IBOV")
-pos = which(patr_liq$`Setor ICB` == cond[1] |
-              patr_liq$`Setor ICB` == cond[2] |
-              patr_liq$`Setor ICB` == cond[3] |
-              patr_liq$`Setor ICB` == cond[4] |
-              patr_liq$`Setor ICB` == cond[5] |
-              patr_liq$`Setor ICB` == cond[6] |
-              patr_liq$`Setor ICB` == cond[7] |
-              patr_liq$`Setor ICB` == cond[8] |
-              patr_liq$`Nome` == cond[9])
+pos = which(patr_liq2$`Setor ICB` == cond[1] |
+              patr_liq2$`Setor ICB` == cond[2] |
+              patr_liq2$`Setor ICB` == cond[3] |
+              patr_liq2$`Setor ICB` == cond[4] |
+              patr_liq2$`Setor ICB` == cond[5] |
+              patr_liq2$`Setor ICB` == cond[6] |
+              patr_liq2$`Setor ICB` == cond[7] |
+              patr_liq2$`Setor ICB` == cond[8] |
+              patr_liq2$`Nome` == cond[9])
 
-patr_liq = patr_liq[-pos,]
+patr_liq2 = patr_liq2[-pos,]
 
 ########## Porcentagem da dívida externa na dívida total ##########
 # Retirando do banco as empresas que fazem parte de setores "indesejados" e o índice IBOV e o índice IBOV
+div_est2 = div_est
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
          "Real State Investment Trusts", "IBOV")
-pos = which(div_est$`Setor ICB` == cond[1] |
+pos = which(div_est2$`Setor ICB` == cond[1] |
               div_est$`Setor ICB` == cond[2] |
               div_est$`Setor ICB` == cond[3] |
               div_est$`Setor ICB` == cond[4] |
@@ -493,7 +494,7 @@ pos = which(div_est$`Setor ICB` == cond[1] |
               div_est$`Setor ICB` == cond[8] |
               div_est$`Nome` == cond[9])
 
-div_est = div_est[-pos,]
+div_est2 = div_est2[-pos,]
 
 ########## Dívida externa ##########
 
@@ -513,16 +514,16 @@ cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investm
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
          "Real State Investment Trusts", "IBOV")
 pos = which(div_est_tot2$`Setor ICB` == cond[1] |
-              div_est_tot$`Setor ICB` == cond[2] |
-              div_est_tot$`Setor ICB` == cond[3] |
-              div_est_tot$`Setor ICB` == cond[4] |
-              div_est_tot$`Setor ICB` == cond[5] |
-              div_est_tot$`Setor ICB` == cond[6] |
-              div_est_tot$`Setor ICB` == cond[7] |
-              div_est_tot$`Setor ICB` == cond[8] |
-              div_est_tot$`Nome` == cond[9])
+              div_est_tot2$`Setor ICB` == cond[2] |
+              div_est_tot2$`Setor ICB` == cond[3] |
+              div_est_tot2$`Setor ICB` == cond[4] |
+              div_est_tot2$`Setor ICB` == cond[5] |
+              div_est_tot2$`Setor ICB` == cond[6] |
+              div_est_tot2$`Setor ICB` == cond[7] |
+              div_est_tot2$`Setor ICB` == cond[8] |
+              div_est_tot2$`Nome` == cond[9])
 
-div_est_tot = div_est_tot[-pos,]
+div_est_tot2 = div_est_tot2[-pos,]
 
 ########## Debentures ##########
 
@@ -542,16 +543,16 @@ cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investm
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
          "Real State Investment Trusts", "IBOV")
 pos = which(deb2$`Setor ICB` == cond[1] |
-              deb$`Setor ICB` == cond[2] |
-              deb$`Setor ICB` == cond[3] |
-              deb$`Setor ICB` == cond[4] |
-              deb$`Setor ICB` == cond[5] |
-              deb$`Setor ICB` == cond[6] |
-              deb$`Setor ICB` == cond[7] |
-              deb$`Setor ICB` == cond[8] |
-              deb$`Nome` == cond[9])
+              deb2$`Setor ICB` == cond[2] |
+              deb2$`Setor ICB` == cond[3] |
+              deb2$`Setor ICB` == cond[4] |
+              deb2$`Setor ICB` == cond[5] |
+              deb2$`Setor ICB` == cond[6] |
+              deb2$`Setor ICB` == cond[7] |
+              deb2$`Setor ICB` == cond[8] |
+              deb2$`Nome` == cond[9])
 
-deb = deb[-pos,]
+deb2 = deb2[-pos,]
 
 ########## Dívida total ##########
 
@@ -570,17 +571,17 @@ for(i in 1:nrow(div_tot2)){
 cond = c("Banks", "Financial Services", "Nonlife Insurance", "Real State Investment & Services",
          "Nonequity Investment Instruments", "Equity Investment Instruments", "#N/A N/A",
          "Real State Investment Trusts", "IBOV")
-pos = which(div_tot$`Setor ICB` == cond[1] |
-              div_tot$`Setor ICB` == cond[2] |
-              div_tot$`Setor ICB` == cond[3] |
-              div_tot$`Setor ICB` == cond[4] |
-              div_tot$`Setor ICB` == cond[5] |
-              div_tot$`Setor ICB` == cond[6] |
-              div_tot$`Setor ICB` == cond[7] |
-              div_tot$`Setor ICB` == cond[8] |
-              div_tot$`Nome` == cond[9])
+pos = which(div_tot2$`Setor ICB` == cond[1] |
+              div_tot2$`Setor ICB` == cond[2] |
+              div_tot2$`Setor ICB` == cond[3] |
+              div_tot2$`Setor ICB` == cond[4] |
+              div_tot2$`Setor ICB` == cond[5] |
+              div_tot2$`Setor ICB` == cond[6] |
+              div_tot2$`Setor ICB` == cond[7] |
+              div_tot2$`Setor ICB` == cond[8] |
+              div_tot2$`Nome` == cond[9])
 
-div_tot = div_tot[-pos,]
+div_tot2 = div_tot2[-pos,]
 
 
 #rm(ativo_total, EBITDA, entr_cx_oper, lucros_retidos, lucros_por_acao, div_cp, div_lp,
