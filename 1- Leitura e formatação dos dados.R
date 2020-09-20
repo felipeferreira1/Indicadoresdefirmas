@@ -26,66 +26,66 @@ setwd("C:/Users/User/Documents/GitHub/indicadoresdefirmas")
 # repetição (for).
 
 for(k in 1:17){
-  base = read_excel("Indicadores Bloomberg.xlsx", sheet = k, skip = 4)
-  base = as.data.frame(base)
+  base = read_excel("Indicadores Bloomberg.xlsx", sheet = k, skip = 4) #Vai lendo aba por aba
+  base = as.data.frame(base) #Formata como data frame
   
-  seq = seq(1, ncol(base), by = 2)
-  nomes = names(base)[seq]
+  seq = seq(1, ncol(base), by = 2) #selecionando linhas onde tem os tickers das empresas
+  nomes = names(base)[seq] #Selecionando nomes de empresas baseado na sequencia anterior
   
-  for(i in 1:ncol(base)){
+  for(i in 1:ncol(base)){ #Mudando nomes das colunas para algo mais sequencial
     names(base)[seq][i] = paste0("V", i)
   }
   
   i = 1
-  while(i < ncol(base)){
+  while(i < ncol(base)){ #Formatando colunas de data como data
     base[,i] = as.Date(base[,i], origin = "1970-01-01")
     i = i+2
   }
   
   i = 1
-  while(i <= ncol(base)){
+  while(i <= ncol(base)){ #Formatando colunas de data como data
     base[,i] = as.Date(paste0(year(base[,i]), "-",month(base[,i]), "-01"), format = "%Y-%m-%d")
     i = i + 2
   }
   
   i = 1
   vetor = NULL
-  while(i <= ncol(base)){
+  while(i <= ncol(base)){ #Pegando códigos das datas para comparação
     vetor = c(vetor,base[,i])
     i = i + 2
   }
-  min = as.Date(min(vetor, na.rm = TRUE), origin = "1970-01-01")  
-  max = as.Date(max(vetor, na.rm = TRUE), origin = "1970-01-01")
-  seq_datas = seq.Date(min, max, by = "3 months")
+  min = as.Date(min(vetor, na.rm = TRUE), origin = "1970-01-01") #Pegando data mais antiga
+  max = as.Date(max(vetor, na.rm = TRUE), origin = "1970-01-01") #Pegando data mais nova
+  seq_datas = seq.Date(min, max, by = "3 months") #Separando datas por trimestre
   
   rm(vetor, min, max)
   
-  dados = data.frame(data = seq_datas)
+  dados = data.frame(data = seq_datas) #Cria dataframe com coluna de datas
   i = 1
-  while(i < ncol(base)){
+  while(i < ncol(base)){ #Colocando os outros dados lado a lado, de acordo com a data
     dados_aux = data.frame(data = base[,i], base[,i+1])
     names(dados_aux)[2] = paste0("base_", i+1)
     dados = merge(dados, dados_aux, all.x = TRUE)
     i = i + 2
   }
-  names(dados)[-1] = nomes
+  names(dados)[-1] = nomes #Recolocando nomes nos dados
   rm(base, dados_aux, i, nomes, seq, seq_datas)
   
-  for(i in 2:ncol(dados)){
+  for(i in 2:ncol(dados)){ #Formatando colunas como números
     if(class(dados[,i]) != "numeric"){dados[,i] = as.numeric(dados[,i])} 
   }
   
-  aux = t(as.matrix(dados[,-1]))
+  aux = t(as.matrix(dados[,-1])) #Transpondo dados
   dados2 = as.data.frame(aux, stringsAsFactors = FALSE)
-  dados2$Empresa = row.names(dados2)
+  dados2$Empresa = row.names(dados2) 
   row.names(dados2) = 1:nrow(dados2)
-  dados2 = dados2[,c(ncol(dados2),1:(ncol(dados2)-1))]
+  dados2 = dados2[,c(ncol(dados2),1:(ncol(dados2)-1))] #Criando linhas com nomes das empresas
   
   datas = dados$data
   anos = year(datas)
   meses = month(datas)
   trim = NULL
-  for(i in 1:length(datas)){
+  for(i in 1:length(datas)){ #separando rótulos com ano e trimestre
     if(meses[i] == 3){trim[i] = "T1"}
     else{if(meses[i] == 6){trim[i] = "T2"}
       else{if(meses[i] == 9){trim[i] = "T3"}
@@ -93,12 +93,12 @@ for(k in 1:17){
   }
   nomes = paste(anos, trim)
   
-  names(dados2) = c("Empresa", nomes)
+  names(dados2) = c("Empresa", nomes) #Colocando rótulos nas colunas de datas
   
-  empresas = read_excel("Empresas.xlsx")
+  empresas = read_excel("Empresas.xlsx") #Lendo informações das empresas
   dados2 = merge(dados2, empresas, by.x = "Empresa", by.y = "Ticker", sort = FALSE)
   n = ncol(dados2)
-  dados2 = dados2[,c(1, n-1, n, 2:(n-2))]
+  dados2 = dados2[,c(1, n-1, n, 2:(n-2))] #Colocando nome e setor da empresa, além do ticker
   
   rm(aux, dados, anos, datas, i, meses, nomes, trim, empresas, n)
   
@@ -125,4 +125,4 @@ for(k in 1:17){
   print(k)
 }
 
-#rm(k)
+rm(k)
