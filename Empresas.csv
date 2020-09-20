@@ -1,0 +1,473 @@
+Ticker;Nome;Setor ICB
+ABEV3 BZ Equity;AMBEV SA;Beverages
+ITUB4 BZ Equity;ITAU UNIBANCO HOLDING S-PREF;Banks
+PETR4 BZ Equity;PETROBRAS - PETROLEO BRAS-PR;Oil & Gas Producers
+BBDC4 BZ Equity;BANCO BRADESCO SA-PREF;Banks
+VALE5 BZ Equity;VALE SA-PREF;Mining
+SANB11 BZ Equity;BANCO SANTANDER BRASIL-UNIT;Banks
+BBAS3 BZ Equity;BANCO DO BRASIL S.A.;Banks
+VIVT4 BZ Equity;TELEFONICA BRASIL S.A.-PREF;Fixed Line Telecommunications
+ITSA4 BZ Equity;ITAUSA-INVESTIMENTOS ITAU-PR;Financial Services
+CIEL3 BZ Equity;CIELO SA;Financial Services
+BBSE3 BZ Equity;BB SEGURIDADE PARTICIPACOES;Nonlife Insurance
+UGPA3 BZ Equity;ULTRAPAR PARTICIPACOES SA;Gas, Water & Multiutilities
+BVMF3 BZ Equity;BM&FBOVESPA SA;Financial Services
+BRFS3 BZ Equity;BRF SA;Food Producers
+CCRO3 BZ Equity;CCR SA;Industrial Transportation
+WEGE3 BZ Equity;WEG SA;Electronic & Electrical Equipment
+CPFE3 BZ Equity;CPFL ENERGIA SA;Electricity
+BRKM5 BZ Equity;BRASKEM SA-PREF A;Chemicals
+KROT3 BZ Equity;KROTON EDUCACIONAL SA;General Retailers
+RADL3 BZ Equity;RAIA DROGASIL SA;Food & Drug Retailers
+TIMP3 BZ Equity;TIM PARTICIPACOES SA;Mobile Telecommunications
+LAME4 BZ Equity;LOJAS AMERICANAS SA-PREF;General Retailers
+EGIE3 BZ Equity;ENGIE BRASIL ENERGIA SA;Electricity
+FIBR3 BZ Equity;FIBRIA CELULOSE SA;Forestry & Paper
+JBSS3 BZ Equity;JBS SA;Food Producers
+PCAR4 BZ Equity;CIA BRASILEIRA DE DIS-PREF;Food & Drug Retailers
+SBSP3 BZ Equity;CIA SANEAMENTO BASICO DE SP;Gas, Water & Multiutilities
+ELET6 BZ Equity;CENTRAIS ELETRICAS BRAS-PR B;Electricity
+HYPE3 BZ Equity;HYPERMARCAS SA;Food Producers
+LREN3 BZ Equity;LOJAS RENNER S.A.;General Retailers
+KLBN4 BZ Equity;KLABIN SA-PREF;General Industrials
+MDIA3 BZ Equity;M DIAS BRANCO SA;Food Producers
+SUZB5 BZ Equity;SUZANO PAPEL E CELULO-PREF A;Forestry & Paper
+GGBR4 BZ Equity;GERDAU SA-PREF;Industrial Metals & Mining
+CSAN3 BZ Equity;COSAN SA INDUSTRIA COMERCIO;Food Producers
+BBTG11 BZ Equity;GRUPO BTG PACTUAL-UNIT;Financial Services
+NATU3 BZ Equity;NATURA COSMETICOS SA;Personal Goods
+MULT3 BZ Equity;MULTIPLAN EMPREENDIMENTOS;Real Estate Investment & Services
+EMBR3 BZ Equity;EMBRAER SA;Aerospace & Defense
+RAIL3 BZ Equity;RUMO SA;Industrial Transportation
+EQTL3 BZ Equity;EQUATORIAL ENERGIA SA - ORD;Electricity
+BRML3 BZ Equity;BR MALLS PARTICIPACOES SA;Real Estate Investment & Services
+PSSA3 BZ Equity;PORTO SEGURO SA;Nonlife Insurance
+TRPL4 BZ Equity;CIA DE TRANSMISSAO DE ENE-PF;Electricity
+CSNA3 BZ Equity;CIA SIDERURGICA NACIONAL SA;Industrial Metals & Mining
+CMIG4 BZ Equity;CIA ENERGETICA MINAS GER-PRF;Electricity
+RENT3 BZ Equity;LOCALIZA RENT A CAR;General Retailers
+FLRY3 BZ Equity;FLEURY SA;Health Care Equipment & Services
+ENGI3 BZ Equity;ENERGISA S.A.;Electricity
+DASA3 BZ Equity;DIAGNOSTICOS DA AMERICA SA;Health Care Equipment & Services
+USIM5 BZ Equity;USINAS SIDER MINAS GER-PF A;Industrial Metals & Mining
+AZUL4 BZ Equity;AZUL SA;Travel & Leisure
+ENBR3 BZ Equity;EDP - ENERGIAS DO BRASIL SA;Electricity
+QUAL3 BZ Equity;QUALICORP SA;Nonlife Insurance
+TAEE11 BZ Equity;TRANSMISSORA ALIANCA DE-UNIT;Electricity
+SMLE3 BZ Equity;SMILES SA;General Retailers
+GRND3 BZ Equity;GRENDENE SA;Personal Goods
+SULA11 BZ Equity;SUL AMERICA SA - UNITS;Nonlife Insurance
+REDE4 BZ Equity;REDE EMPRESAS DE ENER-PREF;Electricity
+BRSR6 BZ Equity;BANCO ESTADO RIO GRAN-PREF B;Banks
+CPLE6 BZ Equity;CIA PARANAENSE DE ENERGI-PFB;Electricity
+BRAP4 BZ Equity;BRADESPAR SA -PREF;Financial Services
+MPLU3 BZ Equity;MULTIPLUS SA;General Retailers
+ODPV3 BZ Equity;ODONTOPREV S.A.;Health Care Equipment & Services
+SMTO3 BZ Equity;SAO MARTINHO SA;Food Producers
+CZZ US Equity;COSAN LTD-CLASS A SHARES;Food Producers
+CPRE3 BZ Equity;CPFL ENERGIAS RENOVAVEIS;Alternative Energy
+MRVE3 BZ Equity;MRV ENGENHARIA;Real Estate Investment & Services
+BTOW3 BZ Equity;B2W CIA DIGITAL;General Retailers
+CGAS5 BZ Equity;CIA DE GAS DE SAO PAULO-PR A;Gas, Water & Multiutilities
+ALPA4 BZ Equity;ALPARGATAS SA - PREF;Personal Goods
+IGTA3 BZ Equity;IGUATEMI EMP DE SHOPPING;Real Estate Investment & Services
+MGLU3 BZ Equity;MAGAZINE LUIZA SA;General Retailers
+ESTC3 BZ Equity;ESTACIO PARTICIPACOES SA;General Retailers
+DTEX3 BZ Equity;DURATEX SA;Construction & Materials
+GUAR4 BZ Equity;GUARARAPES CONFECCOES-PREF;Personal Goods
+TIET3 BZ Equity;AES TIETE ENERGIA SA;Electricity
+ALUP11 BZ Equity;ALUPAR INVESTIMENTO SA-UNIT;Electricity
+ECOR3 BZ Equity;ECORODOVIAS INFRA E LOG SA;Industrial Transportation
+CESP6 BZ Equity;CIA ENERGETICA DE SP-PREF B;Electricity
+TOTS3 BZ Equity;TOTVS SA;Software & Computer Services
+CSRN3 BZ Equity;CIA ENERGETICA DO RIO GRANDE;Electricity
+WHRL4 BZ Equity;WHIRLPOOL SA-PREF;Household Goods & Home Construction
+SAPR4 BZ Equity;CIA SANEAMENTO DO PARANA-PRF;Gas, Water & Multiutilities
+CBEE3 BZ Equity;AMPLA ENERGIA E SERVICOS SA;Electricity
+CEEB3 BZ Equity;CIA ELETRICIDADE DA BAHIA;Electricity
+CYRE3 BZ Equity;CYRELA BRAZIL REALTY SA EMP;Real Estate Investment & Services
+CSMG3 BZ Equity;CIA SANEAMENTO MINAS GERAIS;Gas, Water & Multiutilities
+CELP5 BZ Equity;CENTRAIS ELET DO PARA-PREF A;Electricity
+LIGT3 BZ Equity;LIGHT SA;Electricity
+VVAR3 BZ Equity;VIA VAREJO SA;General Retailers
+GOAU4 BZ Equity;METALURGICA GERDAU SA-PREF;Industrial Metals & Mining
+CVCB3 BZ Equity;CVC BRASIL OPERADORA E AGENC;Travel & Leisure
+ENMA3B BZ Equity;CIA ENERGETICA DO MARANHAO;Electricity
+EKTR4 BZ Equity;ELECTRICIDADE E SERVICOS-PRF;Electricity
+MRFG3 BZ Equity;MARFRIG GLOBAL FOODS SA;Food Producers
+SEDU3 BZ Equity;SOMOS EDUCACAO SA;General Retailers
+WIZS3 BZ Equity;WIZ SOLUCOES E CORRETAGEM DE;Nonlife Insurance
+HGTX3 BZ Equity;CIA HERING;Personal Goods
+COCE5 BZ Equity;CIA ENERGETICA DO CEARA-PR A;Electricity
+ABCB4 BZ Equity;BANCO ABC BRASIL SA;Banks
+GEPA4 BZ Equity;DUKE ENERGY INTL GERACAO-PRF;Gas, Water & Multiutilities
+OIBR4 BZ Equity;OI SA-PREFERENCE;Fixed Line Telecommunications
+ENEV3 BZ Equity;ENEVA SA;Electricity
+PARD3 BZ Equity;INSTITUTO HERMES PARDINI SA;Health Care Equipment & Services
+PRML3 BZ Equity;PRUMO LOGISTICA SA;Industrial Transportation
+LINX3 BZ Equity;LINX SA;Mobile Telecommunications
+EZTC3 BZ Equity;EZ TEC EMPREENDIMENTOS E PAR;Real Estate Investment & Services
+SEER3 BZ Equity;SER EDUCACIONAL SA;General Retailers
+ARZZ3 BZ Equity;AREZZO INDUSTRIA E COMERCIO;Personal Goods
+ALSC3 BZ Equity;ALIANSCE SHOPPING CENTERS SA;Real Estate Investment & Services
+GOLL4 BZ Equity;GOL LINHAS AEREAS - PREF;Travel & Leisure
+BRPR3 BZ Equity;BR PROPERTIES SA;Real Estate Investment & Services
+ENMT4 BZ Equity;ENERGISA MATO GROSSO DISTRIB;Electricity
+BOVA11 BZ Equity;ISHARES IBOVESPA;Nonequity Investment Instruments
+LEVE3 BZ Equity;MAHLE-METAL LEVE SA;Automobiles & Parts
+BEEF3 BZ Equity;MINERVA SA;Food Producers
+NETS US Equity;NETSHOES CAYMAN LTD;General Retailers
+PNVL4 BZ Equity;DIMED SA DISTRIBUIDORA DE-PR;Food & Drug Retailers
+POMO4 BZ Equity;MARCOPOLO SA-PREF;Industrial Engineering
+RLOG3 BZ Equity;COSAN LOGISTICA SA;Industrial Transportation
+KNCR11 BZ Equity;KINEA RENDIMENTOS IMOB FII;Nonequity Investment Instruments
+MOAR3 BZ Equity;MONTEIRO ARANHA S.A.;Financial Services
+BBPO11 BZ Equity;BB PROGRESSIVO II FII;Nonequity Investment Instruments
+AALR3 BZ Equity;ALLIAR MEDICOS A FRENTE SA;Health Care Equipment & Services
+TUPY3 BZ Equity;TUPY SA;Industrial Metals & Mining
+ELPL4 BZ Equity;ELETROPAULO METROPOLI-PREF;Electricity
+MYPK3 BZ Equity;IOCHPE-MAXION S.A.;Automobiles & Parts
+KNRI11 BZ Equity;KINEA RENDA IMOBILIARIA FII;Real Estate Investment Trusts
+SLCE3 BZ Equity;SLC AGRICOLA SA;Food Producers
+MOVI3 BZ Equity;MOVIDA PARTICIPACOES SA;Travel & Leisure
+BRCR11 BZ Equity;FII BTG PACTUAL CORP OFFICE;Real Estate Investment Trusts
+SCAR3 BZ Equity;SAO CARLOS EMPREENDIMENTOS;Real Estate Investment & Services
+BPAN4 BZ Equity;BANCO PAN SA;Banks
+QGEP3 BZ Equity;QGEP PARTICIPACOES SA;Oil & Gas Producers
+SSBR3 BZ Equity;SONAE SIERRA BRASIL SA;Real Estate Investment & Services
+MAGG3 BZ Equity;MAGNESITA REFRATARIOS SA;Industrial Engineering
+RAPT4 BZ Equity;RANDON PARTICIPACOES SA-PREF;Industrial Engineering
+JSLG3 BZ Equity;JSL SA;Industrial Transportation
+LLIS3 BZ Equity;RESTOQUE COMERCIO E CONFEC;General Retailers
+ANIM3 BZ Equity;GAEC EDUCACAO SA;General Retailers
+AMAR3 BZ Equity;MARISA LOJAS SA;General Retailers
+OFSA3 BZ Equity;OURO FINO SAUDE ANIMAL PARTI;Pharmaceuticals & Biotechnology
+BSEV3 BZ Equity;BIOSEV SA;Food Producers
+STBP3 BZ Equity;SANTOS BRASIL PARTICIPACOES;Industrial Transportation
+MLFT4 BZ Equity;JEREISSATI PARTICIPACOES-PR;Real Estate Investment & Services
+CEPE5 BZ Equity;CIA ENERGETICA DE PER-PREF A;Electricity
+VLID3 BZ Equity;VALID SOLUCOES SA;Support Services
+CCPR3 BZ Equity;CYRELA COMMERCIAL PROPERTIES;Real Estate Investment & Services
+JHSF3 BZ Equity;JHSF PARTICIPACOES SA;Real Estate Investment & Services
+HGBS11 BZ Equity;CSHG BRASIL SHOPPING;Real Estate Investment Trusts
+BEES3 BZ Equity;BANESTES SA-BANCO ESTADO ESP;Banks
+HGRE11 BZ Equity;CSHG REAL ESTATE FII;Equity Investment Instruments
+FESA4 BZ Equity;CIA FERRO LIGAS DA BAHIA -FE;Industrial Metals & Mining
+MEAL3 BZ Equity;INTERNATIONAL MEAL COMPANY A;Travel & Leisure
+ABCP11 BZ Equity;FII GRAND PLAZA SHOPPING;Real Estate Investment Trusts
+EEEL3 BZ Equity;CIA ESTADUAL DE GERACAO E TR;Electricity
+VULC3 BZ Equity;VULCABRAS AZALEIA SA;Personal Goods
+PIBB11 BZ Equity;IT NOW PIBB IBRX-50 FI;Nonequity Investment Instruments
+PRBC4 BZ Equity;PARANA BANCO SA;Banks
+TGMA3 BZ Equity;TEGMA GESTAO LOGISTICA;Industrial Transportation
+CLSC4 BZ Equity;CENTRAIS ELETRICAS SANTA CAT;Electricity
+EVEN3 BZ Equity;EVEN CONSTRUTORA E INCORPORA;Real Estate Investment & Services
+UNIP6 BZ Equity;UNIPAR CARBOCLORO SA;Chemicals
+BAZA3 BZ Equity;BANCO DA AMAZONIA SA;Banks
+DIRR3 BZ Equity;DIRECIONAL ENGENHARIA SA;Household Goods & Home Construction
+TCSA3 BZ Equity;TECNISA SA;Household Goods & Home Construction
+BSLI3 BZ Equity;BRB BANCO DE BRASILIA SA;Banks
+RNEW11 BZ Equity;RENOVA ENERGIA SA-UNITS;Electricity
+TEND3 BZ Equity;CONSTRUTORA TENDA SA;Household Goods & Home Construction
+LCAM3 BZ Equity;COMPANHIA DE LOCACAO DAS AME;Travel & Leisure
+TBOF11 BZ Equity;FII TB OFFICE;#N/A N/A
+HBOR3 BZ Equity;HELBOR EMPREENDIMENTOS SA;Real Estate Investment & Services
+SAAG11 BZ Equity;SANTANDER AGENCIAS FII;Nonequity Investment Instruments
+PFRM3 BZ Equity;PROFARMA DISTRIBUIDORA;Food & Drug Retailers
+AGRO3 BZ Equity;BRASILAGRO-CIA BRASILEIRA DE;Food Producers
+LIPR3 BZ Equity;ELETROBRAS PARTICIPACOES SA;Electricity
+MILS3 BZ Equity;MILLS ESTRUTURAS E SERVICOS;Construction & Materials
+JSRE11 BZ Equity;JS REAL ESTATE MULTIGESTAO F;#N/A N/A
+RPMG3 BZ Equity;REFINARIA DE PETROLEOS MANGU;Oil & Gas Producers
+KEPL3 BZ Equity;KEPLER WEBER SA;Industrial Engineering
+TRNT11 BZ Equity;FII TORRE NORTE;Equity Investment Instruments
+PQDP11 BZ Equity;FI IMOBIL PAR DOM PED SHP CT;Equity Investment Instruments
+BPHA3 BZ Equity;BRASIL PHARMA SA;Pharmaceuticals & Biotechnology
+PTBL3 BZ Equity;PORTOBELLO SA;Construction & Materials
+JFEN3 BZ Equity;JOAO FORTES ENGENHARIA S.A.;Real Estate Investment & Services
+AGCX11 BZ Equity;FII AGENCIAS CAIXA;#N/A N/A
+SGPS3 BZ Equity;SPRINGS GLOBAL PARTICIPACOES;Personal Goods
+SHPH11 BZ Equity;SHOPPING PATIO HIGIENOPOLIS;Equity Investment Instruments
+TPIS3 BZ Equity;TPI - TRIUNFO PARTICIPACOES;Construction & Materials
+GPAR3 BZ Equity;CIA CELG DE PARTICIPACOES SA;Electricity
+FAMB11B BZ Equity;FII EDIF ALMIRANTE BARROS;Equity Investment Instruments
+BOVV11 BZ Equity;IT NOW IBOVESPA FUNDO INDICE;#N/A N/A
+LPSB3 BZ Equity;LPS BRASIL CONS DE IMOVEIS;Real Estate Investment & Services
+BMIN4 BZ Equity;BANCO MERCANTIL DE INVE-PREF;Banks
+PRIO3 BZ Equity;PETRO RIO SA;Oil & Gas Producers
+BRIV4 BZ Equity;BANCO ALFA DE INVESTIME-PREF;Banks
+PMAM3 BZ Equity;PARANAPANEMA S.A.;Industrial Metals & Mining
+AHEB5 BZ Equity;SAO PAULO TURISMO SA -PREF A;Travel & Leisure
+RANI4 BZ Equity;CELULOSE IRANI S.A.-PREF;Forestry & Paper
+SHOW3 BZ Equity;T4F ENTRETENIMENTO SA;Travel & Leisure
+TELB3 BZ Equity;TELECOMUNIC BRASILEIRAS S.A.;Fixed Line Telecommunications
+HGLG11 BZ Equity;CSHG LOGISTICA FII;Real Estate Investment Trusts
+CGRA4 BZ Equity;GRAZZIOTIN SA-PREF;General Retailers
+CEBR5 BZ Equity;CIA ENERGETICA BRASIL-PF A;Electricity
+CEED3 BZ Equity;CIA ESTADUAL DE DISTRIBUICAO;Electricity
+KNIP11 BZ Equity;KINEA INDICE DE PRECOS FII;Nonequity Investment Instruments
+CRIV4 BZ Equity;FINANCEIRA ALFA SA-PREF;Financial Services
+BGIP4 BZ Equity;BANCO ESTADO DE SERGIPE-PREF;Banks
+GFSA3 BZ Equity;GAFISA SA;Household Goods & Home Construction
+PEAB3 BZ Equity;CIA PARTICIP ALIANCA BAHIA;Nonlife Insurance
+CARD3 BZ Equity;CSU CARDSYSTEM SA;Support Services
+SHUL4 BZ Equity;SCHULZ SA-PREF;Automobiles & Parts
+GSHP3 BZ Equity;GENERAL SHOPPING BRASIL SA;Real Estate Investment & Services
+EMAE4 BZ Equity;EMPRESA METROPOLITANA-PREF;Electricity
+CSAB4 BZ Equity;CIA SEGUROS ALIANCA BAHIA-PR;Nonlife Insurance
+PINE4 BZ Equity;BANCO PINE SA - PREF SHARES;Banks
+BBFI11B BZ Equity;BB FI IMOBILIARIO PROGRESSIV;Real Estate Investment Trusts
+TECN3 BZ Equity;TECHNOS SA;Personal Goods
+CRPG5 BZ Equity;CRISTAL PIGMENTOS DO BRASIL;Chemicals
+BRGE5 BZ Equity;CONSORCIO ALFA DE ADMI-PRF A;Financial Services
+EUCA4 BZ Equity;EUCATEX SA INDUSTRIA-PREF;Construction & Materials
+FCFL11B BZ Equity;FUNDO CAMPUS FARIA LIMA;Real Estate Investment Trusts
+BBRK3 BZ Equity;BRASIL BROKERS PARTICIPACOES;Real Estate Investment & Services
+DOHL4 BZ Equity;DOHLER SA COMERCIO E IN-PREF;Personal Goods
+BCFF11B BZ Equity;FII BTG PACTUAL FUNDO FUNDOS;Real Estate Investment Trusts
+POSI3 BZ Equity;POSITIVO TECNOLOGIA SA;Technology Hardware & Equipment
+RPAD6 BZ Equity;ALFA HOLDINGS SA-PREF B;Financial Services
+CREM3 BZ Equity;CREMER SA;Health Care Equipment & Services
+FFCI11 BZ Equity;FI IMOB RIO BRAVO RENDA CORP;Real Estate Investment Trusts
+CNES11 BZ Equity;FND INVST IMOB BM CENESPFII;#N/A N/A
+TESA3 BZ Equity;TERRA SANTA AGRO SA;Alternative Energy
+NSLU11 BZ Equity;FIM HOSPITAL NS LOURDES;Real Estate Investment Trusts
+ROMI3 BZ Equity;INDUSTRIAS ROMI SA;Industrial Engineering
+FIIB11 BZ Equity;FII INDUSTRIAL DO BRASIL;#N/A N/A
+RNGO11 BZ Equity;FII RIO NEGRO;#N/A N/A
+FPAB11 BZ Equity;FI IMOB PROJETO AGUA BRANCA;Real Estate Investment Trusts
+PATI3 BZ Equity;PANATLANTICA SA;Industrial Metals & Mining
+BMEB4 BZ Equity;BANCO MERCANTIL DO BRASIL-PR;Banks
+RDNI3 BZ Equity;RODOBENS NEG IMOB SA;Real Estate Investment & Services
+MSPA4 BZ Equity;CIA MELHORAMENTOS DE SAO-PRF;Forestry & Paper
+AFLT3 BZ Equity;AFLUENTE TRANSMISSAO DE;Electricity
+SNSL3 BZ Equity;SENIOR SOLUTION SA;Software & Computer Services
+ETER3 BZ Equity;ETERNIT SA;Construction & Materials
+IDVL4 BZ Equity;BANCO INDUSVAL SA;Banks
+HGJH11 BZ Equity;CSHG JHSF PRIME OFFICES FII;Real Estate Investment Trusts
+JOPA4 BZ Equity;JOAQUIM OLIVEIRA SA-PREF;Food Producers
+XPCM11 BZ Equity;XP CORPORATE MACAE FII;#N/A N/A
+FVBI11 BZ Equity;FII VBI FL 4440;#N/A N/A
+TRIS3 BZ Equity;TRISUL SA;Real Estate Investment & Services
+NAFG4 BZ Equity;NADIR FIGUEIREDO SA-PREF;Household Goods & Home Construction
+BBRC11 BZ Equity;FII BB RENDA CORPORATIVA;#N/A N/A
+PTNT4 BZ Equity;PETTENATI SA INDUSTRIA-PREF;Personal Goods
+BOBR4 BZ Equity;BOMBRIL-PREF;Household Goods & Home Construction
+VRTA11 BZ Equity;FATOR VERITA FD INV IMOBILIA;Real Estate Investment Trusts
+JRDM11 BZ Equity;FII SHOPPING JARDIM SUL;#N/A N/A
+IVVB11 BZ Equity;ISHARES S&P 500 FIC FI IE;#N/A N/A
+KNRE11 BZ Equity;KINEA II REAL ESTATE EQTY FI;Nonequity Investment Instruments
+EDGA11 BZ Equity;FII BM EDIFICIO GALERIA;#N/A N/A
+BPFF11 BZ Equity;FII BRASIL PLURAL ABSOLUTO;#N/A N/A
+FIIP11B BZ Equity;RB CAPITAL RENDA I FI IMOBIL;Real Estate Investment Trusts
+ALMI11 BZ Equity;FII TORRE ALMIRANTE;Real Estate Investment Trusts
+FHER3 BZ Equity;FERTILIZANTES HERINGER LTDA;Chemicals
+FIGS11 BZ Equity;FII GENERAL SHOPPING ATIVO;#N/A N/A
+ITEC3 BZ Equity;ITAUTEC SA - GRUPO ITAUTEC;Technology Hardware & Equipment
+ELEK4 BZ Equity;ELEKEIROZ SA-PRF;Chemicals
+IDNT3 BZ Equity;IDEIASNET SA;Financial Services
+BBVJ11 BZ Equity;BB VOTORANTIM JHSF CID JARD;Equity Investment Instruments
+CTNM4 BZ Equity;CIA TECIDOS NORTE DE MINA-PR;Personal Goods
+CXRI11 BZ Equity;FII CAIXA RIO BRAVO;Nonequity Investment Instruments
+CXCE11B BZ Equity;FI IMOBILIARIO CAIXA CEDAE;Real Estate Investment Trusts
+CEOC11B BZ Equity;FII CEO CCP;#N/A N/A
+CTXT11 BZ Equity;FII CENTRO TEXTIL INTL;Nonequity Investment Instruments
+THRA11B BZ Equity;FND INVST IMOB BM CYR TH COR;#N/A N/A
+RBRD11 BZ Equity;RB CAPITAL RENDA II FUNDO;Real Estate Investment Trusts
+FLMA11 BZ Equity;FDO S F LIMA;Real Estate Investment Trusts
+BTTL4 BZ Equity;BATTISTELLA ADM PART SA-PREF;General Industrials
+VLOL11 BZ Equity;FII VILA OLIMPIA CORPORATE;Nonequity Investment Instruments
+FRIO3 BZ Equity;METALFRIO SOLUTIONS SA;Household Goods & Home Construction
+TRPN3 BZ Equity;TARPON INVESTIMENTOS SA;Financial Services
+LFFE4 BZ Equity;LA FONTE TELECOM SA-PREF;Real Estate Investment & Services
+SLED4 BZ Equity;SARAIVA SA LIVREIROS-PREF;Media
+SGAS4 BZ Equity;WLM INDUSTRIA E COMERCIO SA;Financial Services
+BRIN3 BZ Equity;BR INSURANCE CORRETORA DE SE;Nonlife Insurance
+FEXC11 BZ Equity;FII BTG PACTUAL FUNDO DE CRI;Real Estate Investment Trusts
+FAED11 BZ Equity;FI IMOB ANHANGUERA EDUCACION;Real Estate Investment Trusts
+SPXI11 BZ Equity;IT NOW S&P500 TRN FI;Nonequity Investment Instruments
+OGSA3 BZ Equity;OGX PETROLEO E GAS SA;Oil & Gas Producers
+BMKS3 BZ Equity;BICICLETAS MONARK SA;Leisure Goods
+UCAS3 BZ Equity;UNICASA INDUSTRIA DE MOVEIS;Household Goods & Home Construction
+SPTW11 BZ Equity;SP DOWNTOWN FII;#N/A N/A
+SDIL11 BZ Equity;SDI LOGISTICA RIO FII;#N/A N/A
+RSID3 BZ Equity;ROSSI RESIDENCIAL SA;Household Goods & Home Construction
+FJTA4 BZ Equity;FORJAS TAURUS SA-PREF;Aerospace & Defense
+MTSA4 BZ Equity;METISA METALURGICA TIMB-PREF;Industrial Metals & Mining
+RNDP11 BZ Equity;BB RENDA DE PAPEIS IMOB FII;#N/A N/A
+PLRI11 BZ Equity;POLO FII I;#N/A N/A
+TKNO4 BZ Equity;TEKNO SA INDUSTRIA E COMERCI;Construction & Materials
+HGCR11 BZ Equity;CSHG RECEBIVEIS IMOBILIARIOS;Equity Investment Instruments
+PORD11 BZ Equity;FII POLO CRI;#N/A N/A
+GRLV11 BZ Equity;FII CSHG GR LOUVEIRA;#N/A N/A
+AEFI11 BZ Equity;AESAPAR FDI IMOBILIARIO;#N/A N/A
+TRXL11 BZ Equity;FUNDO TRX REALTY LOGISTICA I;Equity Investment Instruments
+BCRI11 BZ Equity;BANESTES RECEBIVEIS FII;#N/A N/A
+PDGR3 BZ Equity;PDG REALTY SA;Real Estate Investment & Services
+MAXR11 BZ Equity;FII MAX RETAIL;Real Estate Investment Trusts
+MBRF11 BZ Equity;MERCANTIL DO BRASIL FII;Real Estate Investment Trusts
+CBOP11 BZ Equity;CASTELLO BRANCO OF PARK FII;#N/A N/A
+OGXP3 BZ Equity;OLEO E GAS PARTICIPACOES SA;Oil & Gas Producers
+ONEF11 BZ Equity;FII THE ONE;#N/A N/A
+PRSV11 BZ Equity;FI IMOB PRESIDENTE VARGAS;Real Estate Investment Trusts
+AFLU3 BZ Equity;AFLUENTE GERACAO DE ENERGIA;Electricity
+MERC4 BZ Equity;MERCANTIL BRASIL FINANC-PREF;Financial Services
+CTSA4 BZ Equity;CIA TECIDOS SANTANENSE-PREF;Personal Goods
+BMLC11B BZ Equity;BM BRASCAN LAJES CORP FII;#N/A N/A
+RBBV11 BZ Equity;FII JHSF FBV;Real Estate Investment & Services
+HTMX11 BZ Equity;FI IMOBILIARIO HOTEL MAXINVE;Equity Investment Instruments
+LOGN3 BZ Equity;LOG-IN LOGISTICA INTERMODAL;Industrial Transportation
+GPCP3 BZ Equity;GPC PARTICIPACOES SA;Financial Services
+SMAL11 BZ Equity;ISHARES BM&FBOVESPA SM CAP;Nonequity Investment Instruments
+BNFS11 BZ Equity;BANRISUL NOVAS FRONTEIRAS FI;#N/A N/A
+HBTS5 BZ Equity;CIA HABITASUL DE PARTI-PRF A;Financial Services
+ATOM3 BZ Equity;ATOM PARTICIPACOES SA;Mobile Telecommunications
+WPLZ11B BZ Equity;FI IMOB SHOPPING WEST PLAZA;Real Estate Investment Trusts
+BALM4 BZ Equity;BAUMER SA-PREF;Health Care Equipment & Services
+ECPR4 BZ Equity;EMP NACL COM REDITO E PAR-PF;Personal Goods
+ECOO11 BZ Equity;ISHARES CARBONO EFICIENTE;#N/A N/A
+DOMC11 BZ Equity;FII DOMO;Nonequity Investment Instruments
+EURO11 BZ Equity;FUNDO DE INVEST IMOB EUROPAR;Equity Investment Instruments
+CTKA4 BZ Equity;CIA TEXTIL KARSTEN-PREF;Personal Goods
+MEND6 BZ Equity;MENDES JUNIOR ENGENHARIA-PRB;Construction & Materials
+BDLL4 BZ Equity;BARDELLA SA INDUSTRIAS-PREF;Industrial Engineering
+CRDE3 BZ Equity;CR2 EMPREENDIMENTOS IMOBILIA;Real Estate Investment & Services
+XBOV11 BZ Equity;CAIXA ETF IBOVESPA FI;#N/A N/A
+HCRI11 BZ Equity;FI IMOB HOSPITAL CRIANCA;#N/A N/A
+BAUH3 BZ Equity;EXCELSIOR ALIMENTOS SA;Food Producers
+HOOT4 BZ Equity;HOTEIS OTHON S.A.-PREF;Travel & Leisure
+FLRP11 BZ Equity;FLORIPA SHOPPING FI IMOBILIA;Equity Investment Instruments
+CPTS11B BZ Equity;FII CAPITANIA SECURITIES II;#N/A N/A
+DIVO11 BZ Equity;IT NOW IDIV FUNDO DE INDICE;#N/A N/A
+CEDO4 BZ Equity;CIA DE FIACAO E TECIDOS-PREF;Personal Goods
+RBGS11 BZ Equity;RB CAPITAL GENERAL SHOPPING;Real Estate Investment & Services
+SOND6 BZ Equity;SONDOTECNICA ENGENHARIA-PR B;Support Services
+RDES11 BZ Equity;RENDA DE ESCRITORIOS FII;#N/A N/A
+RCSL4 BZ Equity;RECRUSUL SA-PREF;Industrial Engineering
+FRTA3 BZ Equity;POMIFRUTAS SA;Food Producers
+EALT4 BZ Equity;ELECTRO ACO ALTONA SA-PREF;Industrial Metals & Mining
+AZEV4 BZ Equity;AZEVEDO E TRAVASSOS SA-PREF;Support Services
+MFII11 BZ Equity;FII MERITO I;Nonequity Investment Instruments
+HAGA4 BZ Equity;FERRAGENS HAGA SA-PREF;Household Goods & Home Construction
+CALI4 BZ Equity;CONST ADOLPHO LINDENBERG-PRF;Construction & Materials
+RBVO11 BZ Equity;RIO BRAVO CRED IMOB II FII;#N/A N/A
+FIND11 BZ Equity;IT NOW IFNC FUNDO DE INDICE;Nonequity Investment Instruments
+FIXX11 BZ Equity;FII FATOR IFIX;#N/A N/A
+CXTL11 BZ Equity;FI IM CAIXA TRX LOGISTICA RE;#N/A N/A
+OSXB3 BZ Equity;OSX BRASIL SA;Oil Equipment, Services & Distribution
+LUPA3 BZ Equity;LUPATECH SA;Oil Equipment, Services & Distribution
+BAHI3 BZ Equity;BAHEMA SA;Industrial Engineering
+SPRI5 BZ Equity;SPRINGER SA-PREF A;Household Goods & Home Construction
+INEP4 BZ Equity;INEPAR SA INDUSTRIA E C-PREF;General Industrials
+XTED11 BZ Equity;TRX EDIFICIOS CORPORATIVOS;#N/A N/A
+DTCY3 BZ Equity;DTCOM-DIRECT TO COMPANY SA;Software & Computer Services
+MMXM3 BZ Equity;MMX MINERACAO E METALICOS SA;Industrial Metals & Mining
+ISUS11 BZ Equity;IT NOW ISE FUNDO DE INDICE;#N/A N/A
+MGEL4 BZ Equity;MANGELS INDUSTRIAL SA-PREF;Industrial Metals & Mining
+CAMB4 BZ Equity;CAMBUCI S.A.-PREF;Personal Goods
+MXRF11 BZ Equity;MAXI RENDA FII;#N/A N/A
+TOYB3 BZ Equity;TEC TOY SA;Leisure Goods
+GOVE11 BZ Equity;IT NOW IGCT FUNDO DE INDICE;#N/A N/A
+BRAX11 BZ Equity;ISHARES BOVESPA IBRX;Nonequity Investment Instruments
+MNPR3 BZ Equity;MINUPAR PARTICIPACOES SA;Food Producers
+LIXC4 BZ Equity;CONSTRUTORA LIX DA CUNHA-PRF;Construction & Materials
+PLAS3 BZ Equity;PLASCAR PARTICIPACOES SA;Automobiles & Parts
+MATB11 BZ Equity;IT NOW IMAT FUNDO DE INDICE;#N/A N/A
+ESTR4 BZ Equity;MANUF BRINQUEDOS ESTRELA-PRF;Leisure Goods
+CCXC3 BZ Equity;CCX CARVAO DA COLOMBIA SA;Mining
+ADHM3 BZ Equity;ADVANCEDDIGITAL HEALTH MEDIC;Industrial Metals & Mining
+IGBR3 BZ Equity;IGB ELETRONICA SA;Leisure Goods
+BBSD11 BZ Equity;BB ETF S&P DIVIDENDOS BRASIL;Nonequity Investment Instruments
+RSUL3 BZ Equity;METALURGICA RIOSULENSE S.A.;Automobiles & Parts
+TXRX4 BZ Equity;RENAUXVIEW SA-PREF;Personal Goods
+TCNO4 BZ Equity;TECNOSOLO ENGENHARIA SA-PREF;Construction & Materials
+VIVR3 BZ Equity;VIVER INCORPORADORA E CONSTR;Real Estate Investment & Services
+MWET4 BZ Equity;WETZEL SA-PREF;Industrial Metals & Mining
+PSVM11 BZ Equity;PORTO SUDESTE VM SA;Nonequity Investment Instruments
+SNSY5 BZ Equity;SANSUY SA INDUSTRIA-PREF A;Chemicals
+HETA4 BZ Equity;HERCULES SA FABRICA TAL-PREF;Household Goods & Home Construction
+TEKA4 BZ Equity;TEKA-TECELAGEM KUEHNRICH-PRF;Household Goods & Home Construction
+JBDU4 BZ Equity;INDUSTRIAS J B DUARTE SA-PRF;Food Producers
+NUTR3 BZ Equity;NUTRIPLANT INDUSTRIA E COMER;Chemicals
+FBMC4 BZ Equity;FIBAM CIA INDUSTRIAL-PREF;Automobiles & Parts
+MTIG4 BZ Equity;METALGRAFICA IGUACU SA-PREF;General Industrials
+VSPT4 BZ Equity;FERROVIA CENTRO ATLANTI-PREF;Industrial Transportation
+BPAR3 BZ Equity;BANCO ESTADO DO PARA S.A.;Banks
+MMAQ4 BZ Equity;MINASMAQUINAS SA-PREF;General Retailers
+LUXM4 BZ Equity;TREVISA INVESTIMENT SA-PREF;Industrial Transportation
+CPTP3B BZ Equity;CAPITALPART PARTICIPACOES SA;Real Estate Investment & Services
+PPAR3 BZ Equity;POLPAR SA;Forestry & Paper
+NEWT3B BZ Equity;NEWTEL PARTICIPACOES SA;Financial Services
+RRRO US Equity;RIVERRUN RESOURCES INC;Financial Services
+MNZC3B BZ Equity;TERMINAL GARAGEM MENEZES COR;Industrial Transportation
+FNCN3 BZ Equity;FINANSINOS SA;Banks
+LTEL3B BZ Equity;LITEL PARTICIPACOES SA;Mining
+GNAN3B BZ Equity;NEOENERGIA SA;Electricity
+LHER4 BZ Equity;LOJAS HERING SA-PREF;General Retailers
+NORD3 BZ Equity;NORDON INDUS METALURGICA SA;Industrial Engineering
+OPTS3B BZ Equity;SUL 116 PARTICIPACOES SA;Financial Services
+TLVT3B BZ Equity;TELINVEST S.A.;Financial Services
+GRUC3 BZ Equity;GRUCAI SA;Financial Services
+CASN4 BZ Equity;CIA CATARINENSE AGUAS SAN-PF;Gas, Water & Multiutilities
+PSEG4 BZ Equity;SAUIPE SA-PREF;Travel & Leisure
+LGBI US Equity;CANNABIZ MOBILE INC;Financial Services
+CRTE3B BZ Equity;CONCESSIONARIA RIO-TERESOPOL;Industrial Transportation
+AELP3 BZ Equity;AES ELPA SA;Electricity
+CATA3 BZ Equity;CIA INDUSTRIAL CATAGUASES;Personal Goods
+ODER4 BZ Equity;CONSERVAS ODERICH SA-PREF;Food Producers
+CABI3B BZ Equity;CABINDA PARTICIPACOES SA;Financial Services
+CACO3B BZ Equity;CACONDE PARTICIPACOES SA;Financial Services
+ITSJF US Equity;ITSA LTD;Nonequity Investment Instruments
+MAPT4 BZ Equity;CEMEPE INVESTIMENTOS S.A.-PR;Financial Services
+BNPA3B BZ Equity;BONAIRE PARTICIPACOES SA;Financial Services
+ETRO3B BZ Equity;ELETRON SA;Financial Services
+CEGR3 BZ Equity;CIA DISTRIBUIDORA DE GAS;Gas, Water & Multiutilities
+UPKP3B BZ Equity;UPTICK PARTICIPACOES SA;Financial Services
+SETI3B BZ Equity;SETIBA PARTICIPACOES SA;Financial Services
+PRPT3B BZ Equity;PROMPT PARTICIPACOES SA;Financial Services
+BJUL3B BZ Equity;COPACABANA PRINCE PART SA;Financial Services
+STKF3 BZ Equity;STATKRAFT ENERGIAS RENOVAVEI;Electricity
+COBE3B BZ Equity;CONSTRUTORA BETER SA;Construction & Materials
+TENE5 BZ Equity;TECBLU TECELAGEM BLUMEN-PR A;Household Goods & Home Construction
+FRRN3B BZ Equity;ALL AM LAT LOG MALHA NORTE;Industrial Transportation
+SPRT3B BZ Equity;LONGDIS SA;Financial Services
+OPSE3B BZ Equity;SUDESTE SA;General Industrials
+SLCT3B BZ Equity;SELECTPART PARTICIPACOES SA;Financial Services
+CORR4 BZ Equity;CORREA RIBEIRO S.A.-PREF;Financial Services
+OPGM3B BZ Equity;GAMA PARTICIPACOES SA;Financial Services
+MRSA5B BZ Equity;MRS LOGISTICA SA-PREF A;Industrial Transportation
+OPRE3B BZ Equity;RET PARTICIPACOES SA;Financial Services
+IVPR3B BZ Equity;INV E PART INFRA-EST-INVEPAR;Nonequity Investment Instruments
+NCNE5 BZ Equity;VBC ENERGIA SA-PREF;Electricity
+SQRM3 BZ Equity;ITAITINGA PARTICIPACOES SA;Financial Services
+ALEF3B BZ Equity;ALEF SA;Financial Services
+FTRT3B BZ Equity;FUTURETEL SA;Financial Services
+QVQP3B BZ Equity;524 PARTICIPACOES S.A.;Financial Services
+CANT4B BZ Equity;ANDRAD GUTIERR PARTICIP-PREF;Financial Services
+APTI4 BZ Equity;SIDERURGICA J.L. ALIPERTI-PR;Industrial Metals & Mining
+PRMN3B BZ Equity;PRODUTORES ENERGET DE MANSO;Electricity
+OPHE3B BZ Equity;OPPORTUNITY ENERGIA E PARTIC;Financial Services
+FIGE3 BZ Equity;INVESTIMENTOS BEMGE SA;Financial Services
+CMSA4 BZ Equity;CIMS SA-PREF;Financial Services
+ANDG3B BZ Equity;ANDRADE GUTIERREZ CONCESSOES;Construction & Materials
+BETP3B BZ Equity;BETAPART PARTICIPACOES SA;Nonequity Investment Instruments
+IBOV11 BZ Equity;IBOV;General Retailers
+BBTG36 BZ Equity;BTG PACTUAL PARTICIPAT-BDRCA;Financial Services
+BPAC3 BZ Equity;BANCO BTG PACTUAL SA;Financial Services
+BRQB3 BZ Equity;BRQ SOLUCOES EM INFORMATICA;Software & Computer Services
+NRTQ3 BZ Equity;NORTEC QUIMICA S/A;Chemicals
+CTCA3 BZ Equity;CTC - CENTRO DE TECNOLOGIA C;Chemicals
+PMSP11BL BZ Equity;CEPAC - AGUA ESPRAIADA;#N/A N/A
+MCRJ11B BZ Equity;CEPAC - PORTO MARAVILHA RJ;#N/A N/A
+CTBA11B BZ Equity;CEPAC - LINHA VERDE;#N/A N/A
+PMSP12BL BZ Equity;CEPAC - FARIA LIMA;#N/A N/A
+ALTS3 BZ Equity;ALTUS SISTEMAS DE AUTOMACAO;Industrial Engineering
+CABB3 BZ Equity;CIA DE AGUAS DO BRASIL SA;Gas, Water & Multiutilities
+QUSW3 BZ Equity;QUALITY SOFTWARE SA;Software & Computer Services
+SCGIII BZ Equity;SCG III FIP;#N/A N/A
+PMSP13B BZ Equity;CEPAC - PMSP;#N/A N/A
+MSRO3 BZ Equity;MAESTRO LOCADORA DE VEICULOS;General Retailers
+PRCA3 BZ Equity;PRATICA PARTICIPACOES SA;Industrial Engineering
+HCBR3 BZ Equity;BR HOME CENTERS SA;General Retailers
+FOMS3 BZ Equity;FORNO DE MINAS ALIMENTOS S/A;Food Producers
+CNSY3 BZ Equity;CINESYSTEM SA;Travel & Leisure
