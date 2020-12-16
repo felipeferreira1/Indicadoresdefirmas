@@ -344,6 +344,6 @@ write.xlsx(v2.lucros_patr, "Indicadores de Empresas Brasileiras(2).xlsx", sheetN
 write.xlsx(DE, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Debt - Equity Ratio", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(PE_basico, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Price - Earnings Ratio (v1)", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(PE_diluido, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Price - Earnings Ratio (v2)", row.names = FALSE, showNA = FALSE, append = TRUE)
-write.xlsx(div_est, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "% da Div. em moeda estrangeira", row.names = FALSE, showNA = FALSE, append = TRUE)
+write.xlsx(div_est2, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "% da Div. em moeda estrangeira", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(EST, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Div. em moeda estrangeira - calculado", row.names = FALSE, showNA = FALSE, append = TRUE)
 write.xlsx(DEB, "Indicadores de Empresas Brasileiras(2).xlsx", sheetName = "Debentures - Dívida total", row.names = FALSE, showNA = FALSE, append = TRUE)

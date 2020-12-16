@@ -11,7 +11,7 @@ v3.ind.rentabilidade2 = v3.rentabilidade[1:3,-c(1:3)]
 v4.ind.rentabilidade2 = v4.rentabilidade[1:3,-c(1:3)]
 ind.PE_basico2 = PE_basico[1:3,-c(1:3)]
 ind.PE_diluido2 = PE_diluido[1:3,-c(1:3)]
-ind.div_est2 = div_est[1:3,-c(1:3)]
+ind.div_est2 = div_est2[1:3,-c(1:3)]
 ind.EST2 = EST[1:3,-c(1:3)]
 ind.DEB2 = DEB[1:3,-c(1:3)]
 

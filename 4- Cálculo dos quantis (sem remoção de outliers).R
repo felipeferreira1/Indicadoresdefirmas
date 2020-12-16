@@ -11,7 +11,7 @@ v3.ind.rentabilidade = v3.rentabilidade[1:3,-c(1:3)]
 v4.ind.rentabilidade = v4.rentabilidade[1:3,-c(1:3)]
 ind.PE_basico = PE_basico[1:3,-c(1:3)]
 ind.PE_diluido = PE_diluido[1:3,-c(1:3)]
-ind.div_est = div_est[1:3,-c(1:3)]
+ind.div_est = div_est2[1:3,-c(1:3)]
 ind.EST = EST[1:3,-c(1:3)]
 ind.DEB = DEB[1:3,-c(1:3)]
 
@@ -147,9 +147,9 @@ names(ind.PE_diluido) = gsub("[.]", " ", names(ind.PE_diluido))
 names(ind.PE_diluido) = gsub("X", "", names(ind.PE_diluido))
 
 for(i in 1:ncol(ind.div_est)){
-ind.div_est[1,i] = quantile(div_est[,(i+3)], probs = 0.25, na.rm = TRUE, names = TRUE)
-ind.div_est[2,i] = quantile(div_est[,(i+3)], probs = 0.5, na.rm = TRUE, names = TRUE)
-ind.div_est[3,i] = quantile(div_est[,(i+3)], probs = 0.75, na.rm = TRUE, names = TRUE)
+ind.div_est[1,i] = quantile(div_est2[,(i+3)], probs = 0.25, na.rm = TRUE, names = TRUE)
+ind.div_est[2,i] = quantile(div_est2[,(i+3)], probs = 0.5, na.rm = TRUE, names = TRUE)
+ind.div_est[3,i] = quantile(div_est2[,(i+3)], probs = 0.75, na.rm = TRUE, names = TRUE)
 }
 ind.div_est = data.frame(Medida = vetor, ind.div_est)
 names(ind.div_est) = gsub("[.]", " ", names(ind.div_est))
